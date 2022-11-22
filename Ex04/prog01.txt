@@ -1,0 +1,39 @@
+(a)(c)(f)→１
+(b)(d)(g)→2,3
+(e)→4
+
+
+
+
+A問題（50点）
+printf を使って、ポインタの動作の確認を行う。
+#include <stdio.h>
+ 
+int main(){
+ 
+  int num = 567;
+  int *p;
+  p = &num;
+ 
+  printf("(a) %d\n", num);
+  printf("(b) %p\n", &num);
+  printf("(c) %d\n", *(&num));
+  printf("(d) %p\n", p);
+  printf("(e) %p\n", &p);
+  printf("(f) %d\n", *p);
+  printf("(g) %p\n", &(*p));
+ 
+  return 0;
+}
+上記プログラムについて、(a)-(g) の printf 文のうち、 同じ出力になる組み合せをすべて列挙せよ。
+また、それが何を表しているか、以下の1-4から該当するもの（複数の場合がある場合，複数個）を選択せよ。
+
+変数numの値
+ポインタ変数pの値
+変数numのアドレス
+ポインタ変数pのアドレス
+解答例:
+(a)(b) ⇒ 1, 2
+(c)(d)(e) ⇒ 3
+
+(提出ファイル名: prog01.txt)
